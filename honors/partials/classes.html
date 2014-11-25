@@ -1,0 +1,22 @@
+<p>
+  Below is a quick list of classes which I have annotated. For a full listing,
+  please see the <a ui-sref="schedule">schedule page</a>.
+</p>
+
+<h1>Honors Classes</h1>
+
+<div ng-repeat="class in classesHonors">
+  <a href="" ng-click="$state.go(class.href)">
+    <span ng-if="class.id"><b>{{class.id}}</b>:</span>
+    {{class.title}}
+  </a>
+</div>
+
+<h1>Major Classes</h1>
+
+<div ng-repeat="class in classesMajor">
+  <a href="" ng-click="$state.go(class.href)">
+    <span ng-if="class.id"><b>{{class.id}}</b>:</span>
+    {{class.title}}
+  </a>
+</div>

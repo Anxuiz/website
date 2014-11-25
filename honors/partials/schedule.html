@@ -1,0 +1,13 @@
+<div class="row" ng-repeat="year in years">
+    <h1>{{year.label}} ({{year.start}}-{{year.end}})</h1>
+    <div class="col-lg-4" ng-repeat="quarter in ['Autumn', 'Winter', 'Spring']">
+        <div ng-if="year.classes[quarter]">
+            <h2>{{quarter}}</h2>
+            <div ng-repeat="class in year.classes[quarter]">
+                <div ng-if="class.id"><b>{{class.id}}</b></div>
+                <div ng-if="!class.href">{{class.title}}</div>
+                <a ng-if="class.href" style="color: blue" ng-click="$state.go(class.href)" href="">{{class.title}}</a>
+            </div>
+        </div>
+    </div>
+</div>
