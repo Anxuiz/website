@@ -58,6 +58,12 @@ app.service('years', function() {
           { id: 'HONORS 100', title: 'Introduction to Honors Education', href: 'HONORS100', tags: 'honors' },
           { title: 'Computer Science Direct Admit Seminar', tags: 'major' },
         ],
+        'Winter': [
+          { id: 'ENGL 111', title: 'Composition: Literature' },
+          { id: 'MATH 307', title: 'Introduction to Differential Equations' },
+          { id: 'CSE 331', title: 'Software Design & Implementation', instructor: 'John Perkins', tags: 'major' },
+          { id: 'CSE 351', title: 'Hardware / Software Interface', instructor: 'Luis Ceze', tags: 'major' },
+        ],
       },
     },
   ];
