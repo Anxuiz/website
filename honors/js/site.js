@@ -23,6 +23,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
         templateUrl: 'partials/schedule.html',
         title: 'Schedule',
         controller: 'ScheduleCtrl',
+      })
+      .state('research', {
+        url: '/research',
+        templateUrl: 'partials/research.html',
+        title: 'Research',
       });
 
   $stateProvider
