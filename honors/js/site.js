@@ -41,6 +41,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/honors100',
       templateUrl: 'partials/class/HONORS100.html',
       title: 'HONORS 100',
+    })
+    .state('HONORS230A', {
+      url: '/class/honors230a',
+      templateUrl: 'partials/class/HONORS230A.html',
+      title: 'HONORS 230 A: Leadership, Democracy and a More Thoughtful Public',
     });
 });
 
@@ -80,7 +85,7 @@ app.service('years', function() {
       classes: {
         'Autumn': [
           { id: 'CSE 332', title: 'Data Abstractions', tags: 'major' },
-          { id: 'HONORS 230', title: 'Leadership, Democracy and A More Thoughtful Public', tags: 'honors' },
+          { id: 'HONORS 230', title: 'Leadership, Democracy and A More Thoughtful Public', tags: 'honors', href: 'HONORS230A' },
           { id: 'PHYS 121', title: 'Honors Mechanics', tags: 'honors' },
         ],
         'Winter': [
