@@ -28,6 +28,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
         url: '/research',
         templateUrl: 'partials/research.html',
         title: 'Research',
+      })
+      .state('service', {
+        url: '/service',
+        templateUrl: 'partials/service.html',
+        title: 'Service',
       });
 
   $stateProvider
