@@ -33,6 +33,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
         url: '/service',
         templateUrl: 'partials/service.html',
         title: 'Service',
+      })
+      .state('uwfm', {
+        url: '/uwfm',
+        templateUrl: 'partials/uwfm.html',
+        title: 'UWFM',
       });
 
   $stateProvider
