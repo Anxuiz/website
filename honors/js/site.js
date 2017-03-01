@@ -51,6 +51,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/honors230a',
       templateUrl: 'partials/class/HONORS230A.html',
       title: 'HONORS 230 A: Leadership, Democracy and a More Thoughtful Public',
+    })
+    .state('MATH327', {
+      url: '/class/math327',
+      templateUrl: 'partials/class/MATH327.html',
+      title: 'MATH 327: Intro to Real Analysis I',
     });
 });
 
@@ -101,7 +106,7 @@ app.service('years', function() {
         ],
         'Spring': [
           { id: 'CSE 451', title: 'Intro to Operating Systems', tags: 'major' },
-          { id: 'MATH 327', title: 'Intro to Real Analysis I', tags: 'minor' },
+          { id: 'MATH 327', title: 'Intro to Real Analysis I', tags: 'minor', href: 'MATH327' },
           { id: 'PHYS 123', title: 'Honors Waves', tags: 'honors' },
         ],
       },
