@@ -76,6 +76,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/honors240a',
       templateUrl: 'partials/class/HONORS240A.html',
       title: 'HONORS 240 A: Russian Crime Fiction',
+    })
+    .state('CSE473', {
+      url: '/class/cse473',
+      templateUrl: 'partials/class/CSE473.html',
+      title: 'CSE 473: Intro to Artificial Intelligence',
     });
 });
 
@@ -139,7 +144,7 @@ app.service('years', function() {
         'Autumn': [
           { id: 'CSE 344', title: 'Intro to Database Management', tags: 'major' },
           { id: 'CSE 427', title: 'Computational Biology', tags: 'major' },
-          { id: 'CSE 473', title: 'Intro to Artificial Intelligence', tags: 'major' },
+          { id: 'CSE 473', title: 'Intro to Artificial Intelligence', tags: 'major', href: 'CSE473' },
           { id: 'HONORS 393', title: 'Rhetoric of Science', tags: 'honors', href: 'HONORS393A' },
         ],
         'Winter': [
