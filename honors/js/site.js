@@ -129,11 +129,11 @@ app.service('years', function() {
         ],
         'Winter': [
           { id: 'CSE 444', title: 'Database Internals', tags: 'major' },
-          { id: 'HONORS 211', title: 'Ways of Meaning', tags: 'honors' },
           { id: 'HONORS 231', title: 'Islam and Muslims in Western Contexts', tags: 'honors' },
           { id: 'HONORS 496', title: 'Honors Core Integration', tags: 'honors' },
         ],
         'Spring': [
+          { id: 'HONORS 212', title: 'Nabokov', tags: 'honors' },
           { id: 'CSE 421', title: 'Introduction to Algorithms', tags: 'major' },
           { id: 'CSE 452', title: 'Distributed Systems', tags: 'major' },
           { id: 'CSE 457', title: 'Computer Graphics', tags: 'major' },
