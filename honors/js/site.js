@@ -61,6 +61,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/math327',
       templateUrl: 'partials/class/MATH327.html',
       title: 'MATH 327: Intro to Real Analysis I',
+    })
+    .state('HONORS393A', {
+      url: '/class/honors393a',
+      templateUrl: 'partials/class/HONORS393A.html',
+      title: 'HONORS 393 A: Rhetoric of Science',
     });
 });
 
@@ -125,7 +130,7 @@ app.service('years', function() {
           { id: 'CSE 344', title: 'Intro to Database Management', tags: 'major' },
           { id: 'CSE 427', title: 'Computational Biology', tags: 'major' },
           { id: 'CSE 473', title: 'Intro to Artificial Intelligence', tags: 'major' },
-          { id: 'HONORS 393', title: 'Rhetoric of Science', tags: 'honors' },
+          { id: 'HONORS 393', title: 'Rhetoric of Science', tags: 'honors', href: 'HONORS393A' },
         ],
         'Winter': [
           { id: 'CSE 444', title: 'Database Internals', tags: 'major' },
