@@ -20,3 +20,12 @@
     {{class.title}}
   </a>
 </div>
+
+<h1>Minor Classes</h1>
+
+<div ng-repeat="class in classesMinor">
+  <a href="" ng-click="$state.go(class.href)">
+    <span ng-if="class.id"><b>{{class.id}}</b>:</span>
+    {{class.title}}
+  </a>
+</div>
