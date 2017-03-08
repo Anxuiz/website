@@ -71,6 +71,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/engl111',
       templateUrl: 'partials/class/ENGL111.html',
       title: 'ENGL 111: Composition: Literature',
+    })
+    .state('HONORS240A', {
+      url: '/class/honors240a',
+      templateUrl: 'partials/class/HONORS240A.html',
+      title: 'HONORS 240 A: Russian Crime Fiction',
     });
 });
 
@@ -116,7 +121,7 @@ app.service('years', function() {
         'Winter': [
           { id: 'CSE 312', title: 'Foundations of Computing II', tags: 'major' },
           { id: 'CSE 401', title: 'Intro to Compiler Construction', tags: 'major' },
-          { id: 'HONORS 240', title: 'Russian Crime Fiction', tags: 'honors' },
+          { id: 'HONORS 240', title: 'Russian Crime Fiction', tags: 'honors', href: 'HONORS240A' },
           { id: 'PHYS 122', title: 'Honors Electromagnetism', tags: 'honors' },
         ],
         'Spring': [
