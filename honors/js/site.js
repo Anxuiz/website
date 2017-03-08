@@ -66,6 +66,11 @@ var app = angular.module('site', ['ui.router', 'angular.filter'])
       url: '/class/honors393a',
       templateUrl: 'partials/class/HONORS393A.html',
       title: 'HONORS 393 A: Rhetoric of Science',
+    })
+    .state('ENGL111', {
+      url: '/class/engl111',
+      templateUrl: 'partials/class/ENGL111.html',
+      title: 'ENGL 111: Composition: Literature',
     });
 });
 
@@ -84,7 +89,7 @@ app.service('years', function() {
           { title: 'Computer Science Direct Admit Seminar', tags: 'major' },
         ],
         'Winter': [
-          { id: 'ENGL 111', title: 'Composition: Literature' },
+          { id: 'ENGL 111', title: 'Composition: Literature', href: 'ENGL111' },
           { id: 'MATH 307', title: 'Introduction to Differential Equations', tags: 'minor' },
           { id: 'CSE 331', title: 'Software Design & Implementation', instructor: 'John Perkins', tags: 'major' },
           { id: 'CSE 351', title: 'Hardware / Software Interface', instructor: 'Luis Ceze', tags: 'major' },
